@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Liye Amarat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" href="logo.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav container">
+        <div class="nav__data">
+          <a href="#" class="nav__logo">
+            <img
+              src="logo.png"
+              alt="Logo"
+              style="height: 40px; border-radius: 50%"
+            />
+            <span>Liye Amarat</span>
+          </a>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line nav__burger"></i>
+            <i class="ri-close-line nav__close"></i>
+          </div>
+        </div>
+
+        <!--=============== NAV MENU ===============-->
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li><a href="#home" class="nav__link">Home</a></li>
+
+            <li><a href="#menu" class="nav__link">Stok</a></li>
+
+            <!--=============== DROPDOWN 1 ===============-->
+            <li class="dropdown__item">
+              <div class="nav__link"><a href="#aroma">Aroma</a></div>
+            </li>
+
+            <!--=============== DROPDOWN 2 ===============-->
+            <li class="dropdown__item">
+              <div class="nav__link"><a href="#product">Popular</a></div>
+            </li>
+
+            <li>
+              <a href="#discount" class="nav__link"> discount</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="coffee-section" id="home">
+      <!-- KIRI -->
+      <div class="coffee-left">
+        <h1>Its a <br /><span>Coffee Break</span></h1>
+        <p>
+          Setiap tegukan kopi bukan hanya rasa, tapi juga cerita. Dari biji
+          pilihan hingga ke cangkirmu, kami hadirkan kehangatan dan energi untuk
+          menemani harimu.
+        </p>
+
+        <div class="discount-badge">Get<br />Discount<br />20%</div>
+      </div>
+
+      <!-- KANAN -->
+      <div class="coffee-right">
+        <div class="products">
+          <img src="product1.png" alt="Product 1" class="product p1" />
+          <img src="product2.png" alt="Product 2" class="product p2" />
+          <img src="product3.png" alt="Product 3" class="product p3" />
+        </div>
+        <img src="kopi.png" alt="Coffee Beans" class="beans" />
+      </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <div class="menu-header">
+        <h1>Our Coffee Menu</h1>
+        <p>
+          Temukan berbagai pilihan kopi spesial kami, mulai dari Cappuccino
+          lembut, Espresso pekat, hingga racikan unik lainnya. Nikmati cita rasa
+          terbaik untuk menemani setiap momenmu.
+        </p>
+      </div>
+
+      <div class="slider-container">
+        <div class="slides" id="slides">
+          <!-- Slide 1 -->
+          <div class="slide">
+            <div class="coffee-img">
+              <img src="product1.png" alt="Coffee" />
+            </div>
+            <div class="coffee-info">
+              <h2>Capuccino Coffee</h2>
+              <div>
+                <span class="stars">★★★★★</span>
+                <span class="price">Rp 45.000,00</span>
+              </div>
+              <p class="desc">
+                Nikmati perpaduan sempurna antara espresso pekat, susu hangat
+                yang lembut, dan buih creamy di atasnya. Setiap tegukan
+                menghadirkan rasa hangat yang bikin harimu lebih berenergi!
+              </p>
+              <div>
+                <div class="quantity">
+                  <button onclick="updateQty(-1)">-</button>
+                  <span id="qty">4</span>
+                  <button onclick="updateQty(1)">+</button>
+                </div>
+                <button class="add-to-cart">ADD TO CART</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="slide">
+            <div class="coffee-img">
+              <img src="product3.png" alt="Coffee 2" />
+            </div>
+            <div class="coffee-info">
+              <h2>Espresso Coffee</h2>
+              <div>
+                <span class="stars">★★★★☆</span>
+                <span class="price">Rp 30.000,00</span>
+              </div>
+              <p class="desc">
+                Espresso klasik dengan rasa pekat dan aroma kuat. Cocok untuk
+                kamu yang ingin semangat instan.
+              </p>
+              <div>
+                <div class="quantity">
+                  <button onclick="updateQty(-1)">-</button>
+                  <span id="qty2">1</span>
+                  <button onclick="updateQty(1)">+</button>
+                </div>
+                <button class="add-to-cart">ADD TO CART</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="slide">
+            <div class="coffee-img">
+              <img src="product2.png" alt="Coffee 2" />
+            </div>
+            <div class="coffee-info">
+              <h2>Coffee</h2>
+              <div>
+                <span class="stars">★★★★☆</span>
+                <span class="price">Rp 40.000,00</span>
+              </div>
+              <p class="desc">
+                Espresso klasik dengan rasa pekat dan aroma kuat. Cocok untuk
+                kamu yang ingin semangat instan.
+              </p>
+              <div>
+                <div class="quantity">
+                  <button onclick="updateQty(-1)">-</button>
+                  <span id="qty3">1</span>
+                  <button onclick="updateQty(1)">+</button>
+                </div>
+                <button class="add-to-cart">ADD TO CART</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="nav-btn back-btn" onclick="prevSlide()">⬅ Back</button>
+        <button class="nav-btn next-btn" onclick="nextSlide()">Next ➝</button>
+      </div>
+    </section>
+
+    <section class="kopi-section" id="aroma">
+      <div class="coffee-text">
+        <h1>Percayakan Aromanya<br />pada Pilihanmu</h1>
+        <p>
+          Dibuat dari biji pilihan, disangrai dengan sempurna, dan menghadirkan
+          rasa serta aroma yang selalu bikin ketagihan.
+        </p>
+      </div>
+
+      <div class="coffee-cards">
+        <div class="card1">
+          <img src="tangan.png" alt="Hand Roasted" />
+          <h3>Hand Roasted</h3>
+        </div>
+        <div class="card center">
+          <img src="cangkir.png" alt="Kopi Organik" />
+          <h3>Kopi Organik</h3>
+        </div>
+        <div class="card1">
+          <img src="karung.png" alt="Rasa Terbaik" />
+          <h3>Rasa Terbaik</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="products-section" id="product">
+      <h2>Our Popular Products</h2>
+      <p>
+        Discover our most loved coffee products, carefully selected to bring you
+        the finest taste every day
+      </p>
+
+      <div class="product-cards">
+        <!-- Card 1 -->
+        <div class="card">
+          <div class="card-header">Coffee Latte</div>
+          <img src="product1.png" alt="Coffee Product 1" />
+          <div class="card-body">
+            <p>
+              If you drink coffee regularly you will know the difference between
+              fresh coffee and old coffee
+            </p>
+          </div>
+          <div class="card-footer">
+            <span class="price">Rp 45.000,00</span>
+            <button class="btn">ADD TO CART</button>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <div
+            class="card-header"
+            style="background-color: #f5a800; color: #333"
+          >
+            Coffee Latte
+          </div>
+          <img src="product2.png" alt="Coffee Product 2" />
+          <div class="card-body" style="background-color: #f5a800">
+            <p>
+              If you drink coffee regularly you will know the difference between
+              fresh coffee and old coffee
+            </p>
+          </div>
+          <div class="card-footer" style="background-color: #f5a800">
+            <span class="price">Rp 45.000,00</span>
+            <button class="btn">ADD TO CART</button>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <div class="card-header">Coffee Latte</div>
+          <img src="product3.png" alt="Coffee Product 3" />
+          <div class="card-body">
+            <p>
+              If you drink coffee regularly you will know the difference between
+              fresh coffee and old coffee
+            </p>
+          </div>
+          <div class="card-footer">
+            <span class="price">Rp 45.000,00</span>
+            <button class="btn">ADD TO CART</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="discount-section" id="discount">
+      <div class="discount-content">
+        <h2>Get 10% Discount of<br />Your Next Purchase</h2>
+        <p>
+          Enjoy our special offer and make your coffee moments more delightful
+        </p>
+        <div class="discount-buttons">
+          <button class="btn-white">Get discount 10%</button>
+          <button class="btn-yellow">Shop Now</button>
+        </div>
+      </div>
+
+      <div class="discount-products">
+        <img src="product1.png" alt="Coffee Product 1" />
+        <img src="product2.png" alt="Coffee Product 2" />
+        <img src="product3.png" alt="Coffee Product 3" />
+        <img src="product4.png" alt="Coffee Product 4" />
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <!-- Logo di pojok kiri -->
+        <div class="footer-logo">
+          <img src="logo.png" alt="Coffee Logo" />
+          <h2>CoffeeTime</h2>
+        </div>
+
+        <div class="footer-section">
+          <h3>About Us</h3>
+          <p>
+            We are passionate about delivering the finest coffee experience,
+            from bean to cup.
+          </p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Stok</a></li>
+            <li><a href="#aroma">Aroma</a></li>
+            <li><a href="#product">product</a></li>
+            <li><a href="#discount">discount</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>Email: liye.blackdot@gmail.com</p>
+          <p>Phone: +62 822-8849-7277</p>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2025 CoffeeTime. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
