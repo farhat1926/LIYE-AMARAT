@@ -692,12 +692,10 @@ a {
 }
 
 .coffee-text h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
-  margin-bottom: 15px;
-  line-height: 1.3;
-  font-weight: 700;
-  color: #fff;
+   font-family: 'Pacifico', cursive;
+      color: #fff;
+      font-size: 4rem;
+      margin-bottom: 10px;
 }
 
 .coffee-text p {
@@ -808,7 +806,7 @@ a {
 
     .products-section p {
       max-width: 600px;
-      color: #000000;
+      color: #ffffff;
       margin: auto;
       font-size: 1.6rem;
       line-height: 1.5;
