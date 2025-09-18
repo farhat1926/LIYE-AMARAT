@@ -808,7 +808,7 @@ a {
 
     .products-section p {
       max-width: 600px;
-      color: #fff;
+      color: #000000;
       margin: auto;
       font-size: 1.6rem;
       line-height: 1.5;
@@ -915,19 +915,19 @@ a {
     }
 
     /* Background biji kopi */
-   .discount-section::before {
+.discount-section::before {
   content: "";
   position: absolute;
   top: 0; 
   right: 0; 
   bottom: 0; 
   left: 0;
-  background: url("kopi1.png") no-repeat right bottom / contain;
+  background: 
+    url("kopi1.png") no-repeat right bottom / contain,
+    url("kopi.png") no-repeat left bottom / contain;
   opacity: 1;
   z-index: 0;
 }
-
-
     .discount-content {
       position: relative;
       max-width: 500px;
