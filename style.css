@@ -317,13 +317,11 @@ a {
   flex-direction: row;
   padding-top: 60px; 
 }
-.bg-image {
 
-}
 
 /* ======= KIRI ======= */
 .coffee-left {
-  background-color: #4b2e2e;     /* coklat */
+  background-color: #5A4235;     /* coklat */
   color: #fff;
   flex: 1;
   padding: 6rem 3rem;
@@ -331,45 +329,6 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.coffee-left h1 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 3rem;
-  font-weight: 600;
-  line-height: 1.2;
-}
-
-.coffee-left h1 span {
- font-family: 'Pacifico', cursive;
-  font-size: 3.5rem;
-  color: #F5A800; /* kuning kopi */
-  display: inline-block;
-  margin-top: 10px;
-}
-
-.coffee-left p {
- font-family: 'Lora', serif;
-  font-size: 1.1rem;
-  line-height: 1.7;
-  margin-top: 20px;
-  max-width: 500px;
-}
-
-.add-btn {
-  margin-top: 30px;
-  background: #ffc107;
-  color: #4b2e2e;
-  border: none;
-  padding: 1rem 2rem;
-  font-size: 1rem;
-  font-weight: 600;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-.add-btn:hover {
-  background: #e0a800;
 }
 
 /* Badge Diskon */
@@ -395,7 +354,7 @@ a {
 
 /* ======= KANAN ======= */
 .coffee-right {
-  background-color: #f5d18b; /* cream lebih pekat */
+  background-color: #5A4235; /* cream lebih pekat */
   flex: 1;
   position: relative;
   display: flex;
@@ -452,7 +411,7 @@ a {
 @media(max-width: 900px) {
   .coffee-section {
     flex-direction: column;
-    background-color: #4b2e2e; /* jadi satu warna */
+    background-color: #5A4235; /* jadi satu warna */
   }
 
   .coffee-left,
