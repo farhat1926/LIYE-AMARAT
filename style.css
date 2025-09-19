@@ -315,6 +315,10 @@ a {
   display: flex;
   min-height: 100vh;
   flex-direction: row;
+  padding-top: 60px; 
+}
+.bg-image {
+
 }
 
 /* ======= KIRI ======= */
@@ -322,7 +326,7 @@ a {
   background-color: #4b2e2e;     /* coklat */
   color: #fff;
   flex: 1;
-  padding: 4rem 3rem;
+  padding: 6rem 3rem;
   position: relative;
   display: flex;
   flex-direction: column;
