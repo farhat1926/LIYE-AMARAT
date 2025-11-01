@@ -177,16 +177,6 @@ a {
                 1px  1px 0 #fff;
 }
 
-/* Geser khusus Home dan Profil */
-.nav__list li:nth-child(1) .nav__link,
-.nav__list li:nth-child(2) .nav__link {
-  padding-left: 5rem;
-}
-
-.nav__list li:nth-child(2) {
-  margin-right: 8rem;
-}
-
 /* Link di sisi kanan */
 .nav__list li:nth-child(n+3) .nav__link {
   color: #4B2C2C;
